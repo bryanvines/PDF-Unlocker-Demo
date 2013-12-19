@@ -215,9 +215,10 @@
         // The document was unlocked. Initialize a PDF document to hold its pages.
         unlockedPDF = [[PDFDocument alloc]init];
         
-        // Copy pages from unocked PDF document into new PDF document.
+        // Copy pages from unlocked PDF document into new PDF document.
         for (NSInteger currentPageIndex = 0; currentPageIndex < unlockedPDF.pageCount; currentPageIndex++) {
             [unlockedPDF insertPage:[lockedPDF pageAtIndex:currentPageIndex] atIndex:currentPageIndex];
+            NSLog (@"Added page: %li", currentPageIndex);
         }
         
         // Set our unlockedPDF property.
