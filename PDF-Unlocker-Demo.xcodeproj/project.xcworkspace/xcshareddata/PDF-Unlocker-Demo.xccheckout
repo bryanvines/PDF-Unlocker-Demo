@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65FD4117-D3E3-42BD-97AB-4E9841910F79</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PDF-Unlocker-Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10973732-0499-4C59-9287-F63025520BD2</key>
+		<string>https://github.com/bryanvines/BKVPDFUnlocker.git</string>
+		<key>D06158D2-4352-49AA-9030-8EF741B9A628</key>
+		<string>https://github.com/bryanvines/PDF-Unlocker-Demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PDF-Unlocker-Demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10973732-0499-4C59-9287-F63025520BD2</key>
+		<string>../../PDF-Unlocker-Demo/BKVPDFUnlocker</string>
+		<key>D06158D2-4352-49AA-9030-8EF741B9A628</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bryanvines/PDF-Unlocker-Demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D06158D2-4352-49AA-9030-8EF741B9A628</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10973732-0499-4C59-9287-F63025520BD2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BKVPDFUnlocker</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D06158D2-4352-49AA-9030-8EF741B9A628</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PDF-Unlocker-Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
