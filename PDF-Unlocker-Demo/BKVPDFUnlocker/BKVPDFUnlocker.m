@@ -212,13 +212,15 @@
     // Attempt to unlock the PDF document with the password given.
     if ([lockedPDF unlockWithPassword:self.password]) {
         
+        NSLog(@"Successfully unlocked file.");
+        
         // The document was unlocked. Initialize a PDF document to hold its pages.
         unlockedPDF = [[PDFDocument alloc]init];
         
         // Copy pages from unlocked PDF document into new PDF document.
-        for (NSInteger currentPageIndex = 0; currentPageIndex < unlockedPDF.pageCount; currentPageIndex++) {
+        int currentPageIndex;
+        for (currentPageIndex = 0; currentPageIndex < lockedPDF.pageCount; currentPageIndex++) {
             [unlockedPDF insertPage:[lockedPDF pageAtIndex:currentPageIndex] atIndex:currentPageIndex];
-            NSLog (@"Added page: %li", currentPageIndex);
         }
         
         // Set our unlockedPDF property.
@@ -229,6 +231,8 @@
     } else {
         // The document was not unlocked.
         // Return NO.
+        
+        NSLog(@"Could not unlock file.");
         return NO;
     }
 }
