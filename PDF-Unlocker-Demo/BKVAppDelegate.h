@@ -9,8 +9,22 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
-@interface BKVAppDelegate : NSObject <NSApplicationDelegate>
+@class BKVPDFUnlocker;
 
+@interface BKVAppDelegate : NSObject <NSApplicationDelegate> {
+    BKVPDFUnlocker * unlocker;
+}
+
+// Properties
+@property (copy) NSString * fileName;
+@property (copy) NSURL    * fileURL;
+@property        BOOL       fileIsLocked;
+
+// GUI Properties
 @property (assign) IBOutlet NSWindow *window;
+
+// Interface Action Methods
+- (IBAction) clickedSelect:(id)sender;
+- (IBAction) clickedSave:(id)sender;
 
 @end
