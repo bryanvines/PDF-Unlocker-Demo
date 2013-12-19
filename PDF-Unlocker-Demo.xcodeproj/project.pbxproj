@@ -19,6 +19,10 @@
 		4C09A5421862B427001D94F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C09A5401862B427001D94F1 /* InfoPlist.strings */; };
 		4C09A5441862B427001D94F1 /* PDF_Unlocker_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C09A5431862B427001D94F1 /* PDF_Unlocker_DemoTests.m */; };
 		4C09A54E1862B438001D94F1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C09A54D1862B438001D94F1 /* Quartz.framework */; };
+		4C09A5551862BC56001D94F1 /* BKVPDFUnlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C09A5511862BC56001D94F1 /* BKVPDFUnlocker.m */; };
+		4C09A5561862BC56001D94F1 /* BKVPDFUnlocker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C09A5521862BC56001D94F1 /* BKVPDFUnlocker.xib */; };
+		4C09A5571862BC56001D94F1 /* BKVWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C09A5531862BC56001D94F1 /* BKVWarning.png */; };
+		4C09A5581862BC56001D94F1 /* BKVWarning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C09A5541862BC56001D94F1 /* BKVWarning@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		4C09A5411862B427001D94F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C09A5431862B427001D94F1 /* PDF_Unlocker_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDF_Unlocker_DemoTests.m; sourceTree = "<group>"; };
 		4C09A54D1862B438001D94F1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4C09A5501862BC56001D94F1 /* BKVPDFUnlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKVPDFUnlocker.h; sourceTree = "<group>"; };
+		4C09A5511862BC56001D94F1 /* BKVPDFUnlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKVPDFUnlocker.m; sourceTree = "<group>"; };
+		4C09A5521862BC56001D94F1 /* BKVPDFUnlocker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKVPDFUnlocker.xib; sourceTree = "<group>"; };
+		4C09A5531862BC56001D94F1 /* BKVWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKVWarning.png; sourceTree = "<group>"; };
+		4C09A5541862BC56001D94F1 /* BKVWarning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BKVWarning@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +132,7 @@
 				4C09A52C1862B427001D94F1 /* BKVAppDelegate.m */,
 				4C09A52E1862B427001D94F1 /* MainMenu.xib */,
 				4C09A5311862B427001D94F1 /* Images.xcassets */,
+				4C09A54F1862BC56001D94F1 /* BKVPDFUnlocker */,
 				4C09A5201862B427001D94F1 /* Supporting Files */,
 			);
 			path = "PDF-Unlocker-Demo";
@@ -156,6 +166,18 @@
 				4C09A5401862B427001D94F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C09A54F1862BC56001D94F1 /* BKVPDFUnlocker */ = {
+			isa = PBXGroup;
+			children = (
+				4C09A5501862BC56001D94F1 /* BKVPDFUnlocker.h */,
+				4C09A5511862BC56001D94F1 /* BKVPDFUnlocker.m */,
+				4C09A5521862BC56001D94F1 /* BKVPDFUnlocker.xib */,
+				4C09A5531862BC56001D94F1 /* BKVWarning.png */,
+				4C09A5541862BC56001D94F1 /* BKVWarning@2x.png */,
+			);
+			path = BKVPDFUnlocker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +259,10 @@
 			files = (
 				4C09A5241862B427001D94F1 /* InfoPlist.strings in Resources */,
 				4C09A5321862B427001D94F1 /* Images.xcassets in Resources */,
+				4C09A5561862BC56001D94F1 /* BKVPDFUnlocker.xib in Resources */,
 				4C09A52A1862B427001D94F1 /* Credits.rtf in Resources */,
+				4C09A5571862BC56001D94F1 /* BKVWarning.png in Resources */,
+				4C09A5581862BC56001D94F1 /* BKVWarning@2x.png in Resources */,
 				4C09A5301862B427001D94F1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C09A5551862BC56001D94F1 /* BKVPDFUnlocker.m in Sources */,
 				4C09A52D1862B427001D94F1 /* BKVAppDelegate.m in Sources */,
 				4C09A5261862B427001D94F1 /* main.m in Sources */,
 			);
@@ -469,6 +495,7 @@
 				4C09A5491862B427001D94F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C09A54A1862B427001D94F1 /* Build configuration list for PBXNativeTarget "PDF-Unlocker-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +504,7 @@
 				4C09A54C1862B427001D94F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
