@@ -1,0 +1,3 @@
+[submodule "PDF-Unlocker-Demo/BKVPDFUnlocker"]
+	path = PDF-Unlocker-Demo/BKVPDFUnlocker
+	url = https://github.com/bryanvines/BKVPDFUnlocker.git
